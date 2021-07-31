@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversión Binaria</title>
+    
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Archivo Css-->
+    <link rel="stylesheet" href="css/conversion.css">
+</head>
+<body>
+    <div class="modal-dialog text-center">
+        <!--Ajustado al tamaño de la pantalla (en forma de columna)-->
+        <div class="col-sm-8 screen">
+            <div class="modal-content">
+                <!--Tamaño de la imagen-->
+                <div class="col-12 digital-img">
+                    <img src="digital.png">
+                </div>
+                <div class="col-12 titulos  bg-body rounded">
+                    <h2>Conversión de bases</h1>
+                    <h3>Electrónica Digital</h2>
+                </div>
+                <div class="col-12">
+                    <!--Opciones de codigos en formato form-->
+                    <select class="form-control opcion1" id="opcion1">
+                        <option value="decimal">Decimal</option>
+                        <option value="binario">Binario</option>
+                        <option value="octal">Octal</option>
+                        <option value="hexadecimal">Hexadecimal</option>
+                      </select>
+                    <input class="form-control" type="text" placeholder="Entrada"
+                    id="entrada">
+                    <select class="form-control opcion2" id="opcion2">
+                        <option value="binario">Binario</option>
+                        <option value="decimal">Decimal</option>
+                        <option value="octal">Octal</option>
+                        <option value="hexadecimal">Hexadecimal</option>
+                      </select>
+                    <input class="form-control resultado" type="text" placeholder="Resultado"
+                    id="resultado">
+                    
+                </div>
+                <div class="col-12">
+                    <footer>
+                        <p class="text-muted">©Daniel Tovar 2021</p>
+                    </footer>
+
+                </div>
+            </div>
+            
+        </div>
+
+
+    </div>
+    
+   
+
+
+    <script src="js/conversion.js"></script>
+</body>
+</html>
